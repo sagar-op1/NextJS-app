@@ -2,32 +2,480 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Custom global styles */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-gray-100 text-gray-900;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Custom background color for the navbar */
+.bg-custom {
+  background-color: rgb(253, 253, 253);
+  padding-bottom: 15px;
+  /* width:100vw; */
+}
+
+.img-ele {
+  height: 80%;
+  width: 50%;
+}
+
+.pg2-container-1 {
+  width: 100vw;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 20px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.page3-container {
+  width: 100vw;
+  padding-top: 50px;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  background-color: rgba(250, 255, 251, 1);
+}
+
+.page51-container {
+  margin-top: 200px;
+  margin-bottom: 300px;
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 200px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: rgba(250, 255, 251, 1);
+}
+.Page51-Icon {
+}
+
+.page5-container {
+  margin-top: 100px;
+  margin-bottom: 550px;
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: rgba(250, 255, 251, 1);
+}
+
+.page4-container {
+  margin-bottom: 350px;
+  width: 100vw;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  height: auto;
+  padding-bottom: 50px;
+  background-color: rgba(250, 255, 251, 1);
+}
+
+.page6-container {
+  margin-bottom: 100px;
+  margin-top: 100px
+}
+.buttn {
+  padding: 10px 20px 10px 20px;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: rgba(245, 95, 29, 1);
+  border-radius: 6px;
+}
+.w-22 {
+  width: 22rem;
+}
+.w-66 {
+  width: 66.666667%;
+}
+.subscribe-form-container {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-form {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 11px;
+  margin-top: 5rem;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+.pg51-box-space {
+  width: 350px;
+  padding: 20px;
+  margin: 70px auto;
+  background-color: white;
+  /* border: 1px solid #ddd; */
+  box-shadow: 1px 2.5px 1px lightgray;
+  border-radius: 6px;
+}
+
+.footer-container {
+  background-color: rgba(0, 202, 114, 1);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+}
+.foot-head {
+  font-weight: bold;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 30px;
+}
+
+.footer-section h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  color: white;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.icon-styles {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgb(1 173 98);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 5px 0;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-last {
+  width: 100%;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.pg6-para-text {
+  color: rgba(0, 202, 114, 1);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.iconposi {
+  display: inline !important;
+  margin-left: 10px;
+}
+
+.page3-box {
+  display: flex;
+  justify-content: center;
+}
+
+.card1 {
+  width: 16%;
+  height: auto;
+  margin: 10px;
+  border-right: 1px solid grey;
+}
+
+.pg3-img {
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.para-3 {
+  font-size: 15px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.Number {
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.pg4-para-text {
+  margin-bottom: 15px;
+  margin-left: 60px;
+  font-size: 16px;
+  color: rgba(32, 177, 90, 1);
+}
+.pg51-heading-text {
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pg5-heading-text {
+  width: 320px;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pg6-heading-text1 {
+  margin-left: 60px;
+
+  font-size: 10px;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 12px;
+}
+
+.pg6-heading-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.pg2-para-text {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: green;
+}
+.pg4-heading-text {
+  width: 320px;
+  margin-left: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pg2-heading-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pg4-card1 {
+  padding: 20px;
+  height: 100px;
+  width: 50vw;
+  margin-top: 40px;
+}
+.pg51-card1 {
+  box-shadow: 10px solid;
+  padding: 20px;
+  height: 100px;
+  width: 50vw;
+  margin-top: 40px;
+  box-shadow: black;
+}
+
+.pg2-card1 {
+  padding: 20px;
+  height: 100px;
+  width: 25vw;
+  margin-top: 40px;
+}
+.pg4-box-2 {
+  display: flex;
+  justify-content: 10px;
+}
+.pg2-box-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pg2-box-1 {
+  width: 28vw;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.pg4-head {
+  font-size: 20px;
+  font-weight: bold;
+}
+.head {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pg4-box-space {
+  margin-top: 1%;
+  margin-left: 40px;
+  padding: 10px;
+  margin-bottom: 40px;
+  .pg4-img {
+    width: 500px;
   }
 }
+.box-space {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.ancho-pg2 {
+  font-size: 15px;
+  margin-left: 30px;
+}
+.pg4-para {
+  font-size: 12px;
+}
+.para {
+  font-size: 12px;
+}
+
+.head-container {
+  /* Frame 12 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 37px;
+
+  position: absolute;
+  width: 550px;
+  height: 366px;
+  left: 100px;
+  top: 237px;
+}
+
+.LandingOage {
+  /* Landing Page */
+
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  overflow-y: scroll;
+}
+
+.navbar-custom {
+  width: 100vw;
+  height: 80px;
+  padding: 5px 100px;
+  gap: 0px;
+  justify-content: space-between;
+  display: flex;
+  opacity: 1;
+}
+/* Header CTA */
+.Headtext1 {
+  width: 550px;
+  height: 195px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.bg-container {
+  width: 100vw;
+  /* margin:auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-content {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 80px;
+  width: 40%;
+  margin-bottom: 20px;
+}
+.headfooter-container {
+  width: 100vw;
+  background-color: white;
+  padding-left: 90px;
+  padding-right: 90px;
+  height: 60px;
+}
+
+.headfooternav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.heading-text {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.body-image {
+  width: 60%;
+  margin-left: 100px;
+}
+
+.border-green {
+  border-color: rgba(32, 177, 90, 1);
+}
+.Headtext2 {
+  width: 472px;
+  height: 54px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.HeadtextButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 10px;
+  width: 146px;
+  height: 53px;
+  color: white;
+  background: #20b15a;
+  border-radius: 16px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.headtextwhole {
+  /* Frame 12 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 37px;
+
+  position: absolute;
+  width: 550px;
+  height: 366px;
+  left: 100px;
+  top: 237px;
+}
+
+/* Custom component styles */
