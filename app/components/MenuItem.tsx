@@ -1,12 +1,17 @@
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa'; // Ensure this import statement is correct
 
-const MenuItem = ({ text, dropIcon, items }) => {
+// Define the type for the items prop
+interface MenuItemProps {
+  text: string;
+  dropIcon?: boolean; // Optional prop
+  items: Array<{ href: string; label: string }>;
+}
+
+const MenuItem: React.FC<MenuItemProps> = ({ text, dropIcon, items }) => {
   return (
     <div className="relative group">
       <button className="flex items-center space-x-2 p-2 text-lg font-medium text-gray-700 hover:text-gray-900">
-
-      
         <span>{text}</span>
         {dropIcon && <FaChevronDown className="w-4 h-4" />}
       </button>
