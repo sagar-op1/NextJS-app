@@ -1,46 +1,28 @@
-
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
 const HeadFooter = () => {
   return (
-  
     <div className="headfooter-container">
-    <div className="">
-      <ul className="headfooternav ">
-      
+      <ul className="headfooternav">
         <li>
-        <div className="flex items-center space-x-4 ">
-        <Image src="/logos_google.svg" alt="" width={100} height={60}/>
-      </div>
-          
+          <Image src="/logos_google.svg" alt="Google logo" width={100} height={60} />
         </li>
         <li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Trello-logo-blue 1.png" alt="" width={100} height={60}/>
-      </div>
-        </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/logos_monday.svg" alt="" width={100} height={60}/>
-      </div>
-        </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Notion.svg" alt="" width={100} height={60}/>
-      </div>
-    
-        </li><li>
-        <div className="flex items-center space-x-4 pl-12">
-        <Image src="/Slack.svg" alt="" width={100} height={60}/>
-        </div>
+          <Image src="/Trello-logo-blue 1.png" alt="Trello logo" width={100} height={60} />
+        </li>
+        <li>
+          <Image src="/logos_monday.svg" alt="Monday.com logo" width={100} height={60} />
+        </li>
+        <li>
+          <Image src="/Notion.svg" alt="Notion logo" width={100} height={60} />
+        </li>
+        <li>
+          <Image src="/Slack.svg" alt="Slack logo" width={100} height={60} />
         </li>
       </ul>
     </div>
-    </div>
-    
   );
 };
 
-export default HeadFooter
-
-
+export default HeadFooter;

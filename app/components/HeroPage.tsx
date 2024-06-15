@@ -4,43 +4,22 @@ import Image from 'next/image';
 
 const HeroPage = () => {
   return (
-
-    
-<div >
-<div className="bg-container">
+    <div className="bg-container">
       <div className="body-content">
-        {/* Left part content */}
-        
-        <div  className="heading-text">
-
-     <h1> Increase Your Customers Loyality and Satisfaction </h1>
-      
-    </div>
-
-    <div className='mt-4 text-lg'>
-      <p>We help business like yours earn more customers,standard from competitors, make money
-      </p>
-      </div>
-    <div>
-      <button>
-    <Link href="/" className="HeadtextButton mt-6 ">
-            Get Started
-          </Link>
-          </button>
+        <div className="heading-text">
+          <h1>Increase Your Customers Loyality and Satisfaction</h1>
+        </div>
+        <div className="sub-text mt-4 text-lg">
+          <p>We help business like yours earn more<br/>customers, stand out from competitors, make money</p>
+        </div>
+        <div>
+          <Link href="/" className="headtext-button mt-6">Get Started</Link>
         </div>
       </div>
-
-     
-
       <div className="body-image">
-       <div className="w-500">
-        <Image src="/Group 38.svg" alt="" width={500} height={50}/>
-      </div>
+        <Image src="/Lady.svg" alt="Illustration of a lady" width={500} height={500} />
       </div>
     </div>
-    </div>
-    
-   
   );
 };
 

@@ -1,8 +1,6 @@
 import React from "react";
-import { LuFacebook } from "react-icons/lu";
-import { CiTwitter } from "react-icons/ci";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
-import { FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
 
 const Footer = () => {
   return (
@@ -11,21 +9,23 @@ const Footer = () => {
         <div className="foot-head">
           <h1>WEB LOGO</h1>
         </div>
-        <p>Some footer text about the</p>
-        <p>Agency. Just a little description to</p>
-        <p>help people understand you better.</p>
+        <p>
+          Some footer text about the<br />
+          Agency. Just a little description to<br />
+          help people understand you better.
+        </p>
         <div className="social-icons">
           <div className="icon-styles">
-            <LuFacebook />
+            <FaFacebookF />
           </div>
           <div className="icon-styles">
-            <CiTwitter />
+            <FaTwitter />
           </div>
           <div className="icon-styles">
-            <TiSocialLinkedinCircular />
+            <FaLinkedinIn />
           </div>
           <div className="icon-styles">
-            <FaInstagram />
+            <PiInstagramLogoFill />
           </div>
         </div>
       </div>
@@ -36,16 +36,16 @@ const Footer = () => {
         </div>
         <ul>
           <li>
-            <a href="#services">Services</a>
+            <a href="/">Services</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="/">Portfolio</a>
           </li>
           <li>
-            <a href="#about">About Us</a>
+            <a href="/">About Us</a>
           </li>
           <li>
-            <a href="#contact">Contact Us</a>
+            <a href="/">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -63,7 +63,11 @@ const Footer = () => {
         </p>
       </div>
 
-      <div className="footer-last">Copyright Design Agency 2022</div>
+      <div className="footer-last">
+        Copyright Design Agency
+        <br />
+        2022
+      </div>
     </div>
   );
 };
